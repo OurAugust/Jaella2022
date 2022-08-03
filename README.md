@@ -1,2 +1,2 @@
-# WebPage
-Wedding Event Program Details
+# JEALLA-7
+Static info page for wedding

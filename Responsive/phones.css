@@ -1,0 +1,220 @@
+@media screen and (max-width: 900px) {
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  .flexRowColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .flexRowColumnReversed {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .flexRowMaintain {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: start;
+    gap: 24px;
+  }
+  .buttonPrimary {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .buttonPrimary a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    max-lines: 1;
+    overflow: hidden;
+    color: #ff5f00 !important;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+  .buttonPrimary:hover {
+    color: #ff5f00 !important;
+  }
+  .buttonSecondary {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .buttonSecondary a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    max-lines: 1;
+    overflow: hidden;
+    color: #083ac6 !important;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+  .buttonSecondary:hover {
+    color: #ff5f00 !important;
+  }
+  .bucket {
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2rem auto;
+  }
+  .major-div {
+    max-width: 100%;
+  }
+  .heading-1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .paragraph {
+    font-size: 16px;
+    font-weight: 4 0;
+  }
+  .colored {
+    color: #ff5f00;
+  }
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  html,
+body {
+    font-weight: 400;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f5fa;
+  }
+  section {
+    width: 100vw;
+    overflow: hidden;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .line::before {
+    content: "";
+    max-width: 50px;
+    height: 12rem;
+    color: #ff5f00;
+    border-radius: 2rem;
+    background-color: #ff5f00;
+  }
+  .spaciously {
+    min-height: 2rem;
+  }
+  .home {
+    background-image: url("../Res/mobile/home_bg.png");
+    background-size: 100vw 70vh;
+    background-repeat: no-repeat;
+    place-items: center;
+    color: #f4f5fa;
+    text-align: center;
+  }
+  .home .btn-list {
+    position: relative;
+    bottom: 0;
+    padding: 10px 10px 10px 10px;
+    margin-top: 6rem;
+  }
+  .pageTag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 2rem;
+  }
+  .pageTag h3 {
+    padding: 10px 10px 10px 10px;
+    margin-top: 16px;
+  }
+  #program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .program-data-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .program-data-basket .pd-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    margin-top: 4rem;
+    place-items: center;
+    text-align: center;
+  }
+  .colors-data-basket {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+  }
+  .parties-data-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+  }
+  .foot-note {
+    background-color: #2b344d;
+    color: #f4f5fa;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    min-height: 60vh;
+  }
+  .foot-note .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+  }
+  .foot-note .contact-section .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    margin-top: 4rem;
+    place-items: center;
+    text-align: center;
+  }
+}/*# sourceMappingURL=phones.css.map */

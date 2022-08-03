@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.flexRowColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.flexRowColumnReversed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.flexRowMaintain {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: start;
+  gap: 24px;
+}
+
+.buttonPrimary {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.buttonPrimary a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  text-align: center;
+  max-lines: 1;
+  overflow: hidden;
+  color: #f4f5fa;
+  margin: 0 auto;
+  font-weight: 200;
+  background-color: #ff5f00;
+  border-radius: 1rem;
+  padding: 10px 10px 10px 10px;
+}
+.buttonPrimary:hover {
+  color: #ff5f00 !important;
+}
+
+.buttonSecondary {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.buttonSecondary a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  text-align: center;
+  max-lines: 1;
+  overflow: hidden;
+  color: #f4f5fa;
+  margin: 0 auto;
+  font-weight: 200;
+  background-color: #083ac6;
+  border-radius: 1rem;
+  padding: 10px 10px 10px 10px;
+}
+.buttonSecondary:hover {
+  color: #ff5f00 !important;
+}
+
+.bucket {
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem auto;
+}
+
+.major-div {
+  max-width: 40%;
+}
+
+.heading-1 {
+  font-size: 90px;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-weight: 4 0;
+}
+
+.colored {
+  color: #ff5f00;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  font-weight: 400;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f5fa;
+}
+
+section {
+  width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.line::before {
+  content: "";
+  max-width: 50px;
+  height: 12rem;
+  color: #ff5f00;
+  border-radius: 2rem;
+  background-color: #ff5f00;
+}
+
+.spaciously {
+  min-height: 2rem;
+}
+
+.home {
+  background-image: url("./Res/Web_Images/home_bg.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  color: #f4f5fa;
+}
+.home .buttonList {
+  max-width: -webkit-fit-content !important;
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+}
+
+.pageTag {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 5px;
+}
+.pageTag h3 {
+  padding: 0px 0px 0px 0px;
+  margin-top: 16px;
+}
+
+#program {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.program-data-basket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.program-data-basket .pd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  margin-top: 4rem;
+  place-items: center;
+}
+
+.colors-data-basket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.parties-data-basket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.foot-note {
+  background-color: white;
+  color: #2b344d;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  min-height: 60vh;
+}
+.foot-note .contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+.foot-note .contact-section .contact-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  min-width: 60vw;
+}/*# sourceMappingURL=looks.css.map */
