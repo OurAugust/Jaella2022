@@ -43,7 +43,7 @@
   overflow: hidden;
   color: #f4f5fa;
   margin: 0 auto;
-  font-weight: 200;
+  font-weight: 300;
   background-color: #ff5f00;
   border-radius: 1rem;
   padding: 10px 10px 10px 10px;
@@ -72,7 +72,7 @@
   overflow: hidden;
   color: #f4f5fa;
   margin: 0 auto;
-  font-weight: 200;
+  font-weight: 300;
   background-color: #083ac6;
   border-radius: 1rem;
   padding: 10px 10px 10px 10px;
@@ -144,7 +144,7 @@ section {
 }
 
 .spaciously {
-  min-height: 2rem;
+  min-height: 150px;
 }
 
 .home {
@@ -234,4 +234,139 @@ section {
   align-items: center;
   gap: 5px;
   min-width: 60vw;
+}
+
+header {
+  color: #f4f5fa;
+  background-color: #ff5f00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: start;
+  padding: 10px 0rem 10px 0rem;
+  z-index: 700;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  /* Color of 3 lines */
+  /* when navigation is clicked */
+  /* State when the navbar is collapsed */
+}
+header .header-data-basket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+header .header-data-basket .brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+header .header-data-basket .brand .brandc-image {
+  padding: 6px 6px 6px 6px;
+  border: 1px solid #f4f5fa;
+  border-radius: 50%;
+}
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .navbar-nav {
+  letter-spacing: 0.1rem;
+  transition: 0.7s ease-in-out;
+}
+header .nav-link {
+  color: #f4f5fa !important;
+  font-weight: 400;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+header .active-item {
+  border-bottom: 1px solid #f4f5fa;
+  font-weight: 600;
+}
+header .nav-link:hover {
+  transition: 0.7s ease-in-out;
+  border-bottom: 1px solid #f4f5fa;
+}
+header .navbar-toggler {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+header .navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+header .navbar-toggler .toggler-icon {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 3px;
+  background: #083ac6;
+  border-radius: 1px;
+  opacity: 1;
+  left: 10px;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  border-radius: 1px;
+}
+header .navbar-toggler,
+header .navbar-toggler:focus,
+header .navbar-toggler:active,
+header .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+header .navbar-toggler.collapsed .toggler-icon {
+  background-color: #083ac6;
+}
+header .navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+header .navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+header .navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+header .navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+header .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  left: 10px;
+  margin-left: 10px;
+  margin-top: 0px;
+  filter: alpha(opacity=0);
+}
+header .navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  left: 0px;
+  margin-left: 0px;
+  transform: rotate(0deg);
+  margin-top: 0px;
 }/*# sourceMappingURL=looks.css.map */

@@ -43,7 +43,7 @@ $color-light: #f4f5fa;
     overflow: hidden;
     color: $color-light;
     margin: 0 auto;
-    font-weight: 200;
+    font-weight: 300;
     background-color: $color;
     border-radius: 1rem;
     @include unipad(10px);
@@ -137,7 +137,7 @@ section {
 }
 
 .spaciously {
-  min-height: 2rem;
+  min-height: 150px;
 }
 
 .home {
@@ -199,5 +199,156 @@ section {
       @include flexDisplay(space-around, center, 5px, row);
       min-width: 60vw;
     }
+  }
+}
+
+
+
+
+
+//Navigation : header styling
+
+header {
+  color: $color-light;
+  background-color: $color-primary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: start; 
+  padding: 10px 0rem 10px 0rem; 
+  z-index: 700;
+  height:80px;
+  @include flexDisplay(center, center, 0, column);
+
+  .header-data-basket {
+    @include flexDisplay(space-between, center, 1rem, row);
+    width: 100%;
+
+    .brand{
+      @include flexDisplay(center, center, 4px, row);
+      .brandc-image{
+        @include unipad(6px);
+        border: 1px solid $color-light;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  // item styles
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar-nav {
+    letter-spacing: 0.1rem;
+    transition: 0.7s ease-in-out;
+  }
+
+  .nav-link {
+    color: $color-light !important; 
+    font-weight: 400;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .active-item {
+    border-bottom: 1px solid $color-light;
+    font-weight: 600;
+  }
+
+  .nav-link:hover {
+    transition: 0.7s ease-in-out;
+    border-bottom: 1px solid $color-light;
+  }
+
+  //manage the hamburger
+  .navbar-toggler {
+    width: 60px;
+    height: 30px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+
+    span {
+      margin: 0;
+      padding: 0;
+    }
+
+    .toggler-icon {
+      display: block;
+      position: absolute;
+      height: 20px;
+      width: 3px;
+      background: $color-secondary;
+      border-radius: 1px;
+      opacity: 1;
+      left: 10px;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+      border-radius: 1px;
+    }
+  }
+
+  //clear out all default decorative button styles
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+  }
+
+  /* Color of 3 lines */
+
+  .navbar-toggler.collapsed .toggler-icon {
+    background-color: $color-secondary;
+  }
+
+  /* when navigation is clicked */
+
+  .navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+  }
+
+  /* State when the navbar is collapsed */
+
+  .navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    left: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    left: 0px;
+    margin-left: 0px;
+    transform: rotate(0deg);
+    margin-top: 0px;
   }
 }
